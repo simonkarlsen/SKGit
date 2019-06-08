@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    <head>
+        <!--- Linking stylesheet and fonts used -->
+    <link rel=stylesheet type="text/css" href="mindMap.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Da&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <meta charset = "UTF-8">
+    <title>Piano | MindMap</title>
+    </head>
+    
+    <body>
+        
+         <!-- 
+        Header wrapper start
+     -->
+    <header id="headerWrapper">
+
+        <div id="homeLogo">
+            <a href="index.html"><img id="logo" src="images/logo_lillaskrift-kopi.png" alt="Logo"></a>
+        </div>
+
+        <!-- Activity header start -->
+        <div id="ideaHeader">
+            <div id="idea-1">User header activity</div>
+            <div id="idea-2">Idea map updates</div>
+            <div id="idea-3">Projeckt addons</div>
+            <div id="idea-4">New idea</div>
+            <div id="idea-5">New idea</div>
+            <div id="idea-6">New idea</div>
+        </div>
+        <!-- Activity header end -->
+
+        <!-- Users header start -->
+        <div id="usersHeader">
+
+            <div id="contrastColor">
+                <div id="contrastColorText"> High <br> Contrast</div>
+                <div id="contrastColorSwitch">
+                    <label class="switch">
+                        <input type="checkbox" id="isChecked">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="user-1">
+                <img class="profilePictures" src="images/Ingrid.jpg" alt="user-1">
+            </div>
+            <div class="userActivity" id="user-1-Activity">
+                <div id="userToDo-1" class="toDoBlock">1</div>
+                <div id="userAssistance-1" class="assistanceBlock">2</div>
+                <div id="userInProgress-1" class="inProgressBlock">3</div>
+                <div id="userFinished-1" class="finishedBlock">4</div>
+            </div>
+    
+            <div id="user-2">
+                <img class="profilePictures" src="images/Joakim.jpg" alt="user-2">
+            </div>
+            <div class="userActivity" id="user-2-Activity">
+                <div id="userToDo-2" class="toDoBlock">1</div>
+                <div id="userAssistance-2" class="assistanceBlock">2</div>
+                <div id="userInProgress-2" class="inProgressBlock">3</div>
+                <div id="userFinished-2" class="finishedBlock">4</div>
+            </div>
+    
+            <div id="user-3">
+                <img class="profilePictures" src="images/Mats.jpg" alt="user-3">
+            </div>
+            <div class="userActivity" id="user-3-Activity">
+                <div id="userToDo-3" class="toDoBlock">1</div>
+                <div id="userAssistance-3" class="assistanceBlock">2</div>
+                <div id="userInProgress-3" class="inProgressBlock">3</div>
+                <div id="userFinished-3" class="finishedBlock">4</div>
+            </div>
+    
+            <div id="user-4">
+                <img class="profilePictures" src="images/Simon.jpg" alt="user-4">
+            </div>
+            <div class="userActivity" id="user-4-Activity">
+                <div id="userToDo-4" class="toDoBlock">1</div>
+                <div id="userAssistance-4" class="assistanceBlock">2</div>
+                <div id="userInProgress-4" class="inProgressBlock">3</div>
+                <div id="userFinished-4" class="finishedBlock">4</div>
+            </div>
+    
+            <div id="user-5">
+                <img class="profilePictures" src="images/Solveig.jpg" alt="user-5">
+            </div>
+            <div class="userActivity" id="user-5-Activity">
+                <div id="userToDo-5" class="toDoBlock">1</div>
+                <div id="userAssistance-5" class="assistanceBlock">2</div>
+                <div id="userInProgress-5" class="inProgressBlock">3</div>
+                <div id="userFinished-5" class="finishedBlock">4</div>
+            </div>
+    
+            <div id="user-6">
+                <img class="profilePictures" src="images/Wetle.jpg" alt="user-6">
+            </div>
+            <div class="userActivity" id="user-6-Activity">
+                <div id="userToDo-6" class="toDoBlock">1</div>
+                <div id="userAssistance-6" class="assistanceBlock">2</div>
+                <div id="userInProgress-6" class="inProgressBlock">3</div>
+                <div id="userFinished-6" class="finishedBlock">4</div>
+            </div>
+
+        </div>
+        <!-- Users header end -->
+
+    </header>
+    <!-- 
+        Header wrapper end
+     -->
+        
+        
+        <div id="mainContainer">
+            
+            <!--- Adding the sidebar with links to each site -->
+            <div id="sideBar">
+            <a href="toDo.html"><img src="images/todo.png" id="toDoImg"></a>
+            <a href="mindMap.html"><img src="images/lamp.png" id="mindMapImg"></a>
+            <a href="resources.html"><img src="images/files.png" id="resourcesImg"></a>
+            </div>
+            
+            <!--- The box that contains the input fields and the output -->
+            <div id="boxContainer">
+                <div id="mindHeader1">
+                    <h2 id="mindHeaderText">Create idea</h2>
+                    
+                    <!--input fields, also add buttons-->
+                    <p id="input1InfoText" class="inputInfoText">1. Add the name for your idea</p>
+                    <input type="text" id="newField1" placeholder="Add idea name">
+                    <button onclick="addIdeaName()" id="addButton1">Add</button>
+                    
+                    <p id="input2InfoText" class="inputInfoText">2. Add ideas for development</p>
+                    <input type="text" id="newField2" placeholder="Code ideas">
+                    <button onclick="addIdea()" id="addButton2">Add</button>
+                    
+                    <p id="input3InfoText" class="inputInfoText">3. Add ideas for design</p>
+                    <input type="text" id="newField3" placeholder="Design ideas">
+                    <button onclick="addIdea1()" id="addButton3">Add</button>
+                    
+                    <div id="headerLine"></div>
+                    
+                    
+                </div>
+                <!--output fields, where the input is displayed, also remove buttons-->
+                <div id="outputIdeaName">
+                    <p id="showIdeaName">
+                    </p>
+                </div>
+                
+                <div class="outputBoxes" id="outputIdea">
+                    <p id="ideaText1">Ideas for development: </p>
+                    <ul id="showIdea">
+                    </ul>
+                </div>
+                <button id="removeDevInputButton" onclick="removeAll()">Remove all items</button>
+                
+                
+                <div class="outputBoxes" id="outputIdea1">
+                    <p id="ideaText2">Ideas for design: </p>
+                    <ul id="showIdea1">
+                    </ul>
+                </div>
+                <button id="removeDevInputButton2" onclick="removeAll1()">Remove all items</button>
+                
+                    
+                
+                
+            
+            
+            </div>
+            
+        
+        
+        
+        </div>
+        
+        <!--- the container for the moving circles in the background -->
+        <div id="circleContainer">
+            <div id="movingCircle1" class="movingCircle"></div>
+            <div id="movingCircle2" class="movingCircle"></div>
+            <div id="movingCircle3" class="movingCircle"></div>
+            <div id="movingCircle4" class="movingCircle"></div>
+            <div id="movingCircle5" class="movingCircle"></div>
+            <div id="movingCircle6" class="movingCircle"></div>
+            <div id="movingCircle7" class="movingCircle"></div>
+            </div>
+    
+    <script type="text/javascript" src="mindMap.js"></script>
+    <script type="text/javascript" src="highContrast.js"></script>
+    </body>
+
+
+</html>

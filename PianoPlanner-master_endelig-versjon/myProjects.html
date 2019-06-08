@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Piano</title>
+        <link rel="stylesheet" href="myProjects.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Da&display=swap" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        
+        <div class="mainWrapper">
+            
+            <a href="index.html"><img src="Images/logo_lillaskrift.png" id="logo"></a>
+            
+            <!--- Loginbox that shows that the user is logged in-->
+            <div class="loginBox">
+                <p class="login">You are logged in</p>
+            </div>
+            
+            <!-- the different projectsbuttons -->
+            <div class="yourProjects">Your projects</div>
+            <div class="buttonWrapper1">
+            <button class="projectButtons">Band project</button>
+            <button class="projectButtons" id="project2">Surprice birthday<img src="Images/party.jpg" id="partyProject"></button>
+            </div>
+            <div class="buttonWrapper2">
+                <button class="projectButtons" id="project3">Web project <a href="toDo.html"><img src="Images/WebProject.jpeg" id=webProject></a></button>
+            <button class="projectButtons">Open project</button>   
+            </div>
+            
+            <img src="Images/Ingrid.jpg" class="user" id="ingrid" style="visibility:hidden">
+            <img src="Images/Joakim.jpg" class="user" id="joakim" style="visibility:hidden">
+            <img src="Images/Mats.jpg" class="user" id="mats" style="visibility:hidden">
+            <img src="Images/Simon.jpg" class="user" id="simon" style="visibility:hidden">
+            <img src="Images/Solveig.jpg" class="user" id="solveig" style="visibility:hidden">
+            <img src="Images/Wetle.jpg" class="user" id="wetle" style="visibility:hidden">
+            
+            
+            <img src="Images/default_user_icon.png" class="user" id="user1" style="visibility:hidden">
+            <img src="Images/default_user_icon.png" class="user" id="user2" style="visibility:hidden">
+            <img src="Images/default_user_icon.png" class="user" id="user3" style="visibility:hidden">
+            <img src="Images/default_user_icon.png" class="user" id="user4" style="visibility:hidden">
+            <img src="Images/default_user_icon.png" class="user" id="user5" style="visibility:hidden">
+            <img src="Images/default_user_icon.png" class="user" id="user6" style="visibility:hidden">
+            
+            <!-- sliderbutton top left that shows users or hides users -->
+            <div id="showUsersContainer">
+                <label class="switch">
+                    <input type="checkbox" onclick="showPictures()">
+                    <span class="slider round"></span>
+                </label>
+                <div class="showUsers">Show users</div>
+            </div>
+
+        </div>
+        
+        <!-- container for the circles in the background -->
+        <div id="circleContainer">
+            <div id="movingCircle1" class="movingCircle"></div>
+            <div id="movingCircle2" class="movingCircle"></div>
+            <div id="movingCircle3" class="movingCircle"></div>
+            <div id="movingCircle4" class="movingCircle"></div>
+            <div id="movingCircle5" class="movingCircle"></div>
+            <div id="movingCircle6" class="movingCircle"></div>
+            <div id="movingCircle7" class="movingCircle"></div>
+        </div>
+    
+        
+        <script type="text/javascript" src="myProjects.js"></script>
+        <script type="text/javascript" src="highContrast.js"></script>
+    
+    </body>
+
+
+</html>

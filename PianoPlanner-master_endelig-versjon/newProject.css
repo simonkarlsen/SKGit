@@ -1,0 +1,359 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #8781bd;
+    background-repeat: no-repeat;
+}
+
+#mainContainer{
+    position: relative;
+    display: flex;
+    width: 1325px;
+    height: 768px;
+    margin: auto;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#logo{
+    position: absolute;
+    top: -50px;
+    left: 500px;
+    width: 250px;
+    height: 250px;
+    z-index: 300;
+}
+
+
+/*setting the values for the box that holds all the info*/
+#boxContainer{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 0;
+    display: inline-block;
+    width: 75%; 
+    height: 75%; 
+    top: 20%;
+    left: 12.5%; 
+    background-color: #F2F2E8;
+    border-radius: 20px; 
+    opacity: 0.8;
+    box-shadow: 10px 10px 5px #3a5532;
+    z-index: 100;
+    overflow: hidden;
+}
+
+#gettingStartedText{
+    position: absolute;
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    left: 13%; 
+    text-decoration: underline;
+}
+
+/*values for both the inputfields*/
+.inputBox{
+    position: absolute;
+    font-size: 15px;
+    width: 50%;
+    text-align: center;
+    padding: 10px; 
+    border-radius: 20px;
+}
+
+#inputBox1{
+    top: 20%;
+    left: 1%;
+}
+
+#inputBox2{
+    top: 50%;
+    left: 1%;
+}
+
+/*values for both the buttons that add the inputvalues to the lists on the right*/
+.addButton{
+    position: absolute;
+    left: 80%;
+    height: 30%;
+    width: 10%;
+    top: 89%;
+    border-radius: 20px; 
+    border: 1px solid black;
+    background-color: #dddfe0;
+}
+
+/*remove function to remove the given input*/
+.removeButton{
+    position: absolute;
+    border: 1px solid black; 
+    border-radius: 20px;
+    background-color: #dddfe0;
+}
+
+#removeButton1{
+    top: 125px;
+    left: 40px; 
+}
+
+#removeButton2{
+    top: 245px;
+    left: 30px;
+}
+
+/*list of the output given in the inputfields*/
+#outputUser1{
+    position: absolute;
+    width: 10%;
+    font-size: 20px;
+    opacity: 0.7;
+    top: 40%;
+    left: 700px;
+}
+
+#outputName{
+    position: absolute;
+    left: 700px;
+    font-size: 20px;
+    opacity: 0.7;
+    top: 14%;
+}
+
+#projectName, #registeredUsers{
+    text-decoration: underline;
+    text-decoration-style:dotted;
+}
+
+/*styling of the input fields*/
+input[type=text]{
+    position: absolute;
+    left: 10%;
+    height: 30%;
+    font-size: 60%;
+    top: 80%;
+    width: 80%;
+    margin: 8px 0;
+    padding: 1px 10px;
+    box-sizing: border-box;
+    border-radius: 20px; 
+    border: 1px solid black; 
+    color: #747270;
+}
+
+input[type=text]:focus{
+    border: 3px solid #555;
+}
+
+/*styling the lists that show the input*/
+#listUsers{
+    position: absolute;
+    background: #F2F2E8;
+    width: 130px;
+    height: 150px; 
+    overflow: auto;
+    top: 70px;
+    left: -20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px;
+}
+
+#listedPname{
+    position: absolute;
+    top: 70px;
+    left: -20px;
+    width: 130px;
+    height: 30px;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px;
+}
+
+
+#seperationWall{
+    position: absolute;
+    background-color: black;
+    height: 814.5px;
+    width: 4px;
+    left: 550px;
+}
+
+/*Styling the background on the left of the boxContainer*/
+#backgroundLeft{
+    position: absolute;
+    display: inline-block;
+    opacity: 0.5;
+    width: 550px;
+    height: 100%;
+    bottom: 0; 
+}
+
+#overviewText{
+    position: absolute;
+    font-family: 'Anton', sans-serif;
+    width: 250px;
+    left: 65%;
+    font-size: 30px; 
+    text-decoration: underline;
+    text-decoration-color: #847d7d;
+}
+
+/*placing the create button*/
+#submit{
+    position: absolute;
+    bottom: 15px;
+    left: 735px;
+}
+
+/*Styling the create button*/
+input[type=submit]{
+    width: 70px; 
+    height: 50px;
+    border-radius: 20px; 
+    background-color: #dddfe0;
+    border: 1px solid black; 
+}
+
+/*placing and styling curlybrackets around the headline texts*/
+.curlyImg{
+    position: absolute;
+    height: 20px;
+    opacity: 0.7; 
+}
+
+#curlyRight1{
+    left: 334px;
+    top: 150px;
+}
+
+#curlyLeft1{
+    left: 195px; 
+    top: 150px;
+    transform: rotateY(180deg);
+}
+
+#curlyRight2{
+    left: 305px;
+    top: 323px;
+}
+
+#curlyLeft2{
+    left: 225px; 
+    top: 323px; 
+    transform: rotateY(180deg);
+}
+
+/*specifying the area the circles in the background will be moving in*/
+#circleContainer{
+    position: absolute;
+    top: 0;
+    width:100vw;
+    height: 70vw;
+    overflow: hidden;
+}
+
+/*styling the circles*/
+.movingCircle{
+    position: absolute;
+    border-radius: 50%; 
+    background-color: #5046aa;
+}
+
+#movingCircle1{
+    width: 100px; 
+    height: 100px; 
+    left: -510px; 
+    animation-name: circleLeftToRight1;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle2{
+    width: 300px; 
+    height: 300px; 
+    right: 1450px; 
+    animation-name: circleRightToLeft1;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle3{
+    width: 200px; 
+    height: 200px; 
+    left: -500px; 
+    animation-name: circleRightToLeft1;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10s;
+}
+
+#movingCircle4{
+    width: 150px; 
+    height: 150px; 
+    left: -700px; 
+    animation-name: circleLeftToRight1;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle5{
+    width: 150px; 
+    height: 150px; 
+    right: -700px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle6{
+    width: 100px; 
+    height: 100px; 
+    right: -300px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/*giving the animation instructions to the different circles*/
+@keyframes circleLeftToRight1{
+    0%{
+        left: -700px;
+        top: 100px; 
+    }100%{
+        left: 1450px;
+        top: 500px; 
+    }
+}
+
+@keyframes circleRightToLeft1{
+    0%{
+        right: -700px;
+        top: -100px; 
+    }100%{
+        right: 1450px;
+        top: 500px; 
+    }
+}
+
+@keyframes circleRightToLeft2{
+    0%{
+        right: -700px;
+        bottom: -300px;
+    }100%{
+        right: 1750px;
+        bottom: 400px; 
+    }
+}
+
+
+
+

@@ -1,0 +1,442 @@
+
+/* defining the background of the page */
+body{
+    background-color: #8781bd;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+/* A main wrapper to make the page ajustable */
+.mainWrapper{
+    position: relative;
+    display: flex;
+    width: 1325px;
+    height: 768px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* page logo */
+#logo{
+    position: absolute;   
+    width: 250px;
+    height: 250px;
+    top: 0px;
+    left: 520px; 
+}
+
+/* text below logo */
+.yourProjects{
+    position: absolute;
+    left: 35%;
+    font-family: 'Anton', sans-serif;
+    font-size: 70px;
+    opacity: 0.5;
+    text-decoration: underline;
+    top: 250px;  
+}
+
+/* box in right corner to show login information */
+.loginBox{
+    position: absolute;
+    top: 30px;
+    right: 4%;
+    border: 2px solid #F2F2E8;
+    background-color: #F2F2E8;
+    padding: 3px;
+    margin: 8px;
+    height: 30px;
+    width: 133px;
+    border-radius: 20px;
+}
+
+/* text in login box */ 
+.login{
+    position: absolute;
+    top: 20%;
+    margin: 0;
+    right: 20%;
+    font-size: 15px;
+    font-family: "Open Sans Condensed", sans-serif;
+    opacity: 0.6;
+    text-decoration: underline;
+    z-index: 1;
+}
+
+/* wrapper for the buttons band project and surprice birthday */ 
+.buttonWrapper1{
+    position: absolute;
+    top: 400px;
+    left: 345px;
+}
+
+/* wrapper for the buttons project 3 and project 4 */
+.buttonWrapper2{
+    position: absolute;
+    left: 345px;
+    top: 550px;
+}
+
+/* class for all the buttons */
+.projectButtons{
+    width: 280px;
+    height: 130px;
+    opacity: 0.6;
+    border: 1px;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    font-family: "Open Sans Condensed", sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Picture for party project button */
+#partyProject{
+    position: absolute;
+    top: 10px;
+    left: 314px;
+    width: 280px;
+    height: 130px;
+    border-radius: 20px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+#webProject{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 280px;
+    height: 130px;
+    border-radius: 20px;
+    opacity: 0.4; 
+    z-index: 400;
+}
+
+/* ID for project button classes */
+#project2{
+    opacity: 1;
+}
+
+#project3{
+    opacity: 1;
+}
+
+/* hover function for the buttons */ 
+.projectButtons:hover{
+    box-shadow: 10px 15px #888888;
+    background-color: #d0d0d0;
+    
+}
+
+/* class and ID´s for users in projects */
+.user{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    z-index: 10;
+    
+}
+
+#user1{
+    left: 360px;
+    top: 415px;
+}
+
+#user2{
+    left: 395px;
+    top: 415px;
+}
+
+#user3{
+    left: 430px;
+    top: 415px;
+}
+
+#user4{
+    left: 465px;
+    top: 415px;
+}
+
+#user5{
+    left: 500px;
+    top: 415px;
+}
+
+#user6{
+    left: 535px;
+    top: 415px;
+}
+
+#ingrid{
+    left: 360px;
+    top: 565px;
+}
+
+#joakim{
+    left: 395px;
+    top: 565px;
+}
+
+#mats{
+    left: 430px;
+    top: 565px;
+}
+
+#simon{
+    left: 465px;
+    top: 565px;
+}
+
+#solveig{
+    left: 500px;
+    top: 565px;
+}
+
+#wetle{
+    left: 535px;
+    top: 565px;
+}
+
+/* 
+ Show users switch start
+*/
+#showUsersContainer{
+    position: absolute;
+    top: 30px;
+    left: 1%;
+    border: 2px solid #F2F2E8;
+    background-color: #F2F2E8;
+    padding: 3px;
+    margin: 8px;
+    height: 30px;
+    width: 136px;
+    border-radius: 20px;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+    top: 2%;
+    left: 2%;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.showUsers{
+    position: absolute;
+    font-family: "Open Sans Condensed", sans-serif;
+    padding: 2px;
+    left: 70px;
+    top: 3px;
+    text-decoration-line: underline;
+    border-radius: 20px;   
+}
+/* 
+ Show users switch end
+*/
+
+
+/* Adding floating circles to the background */
+#circleContainer{
+    position: absolute;
+    top: 0;
+    width:100vw;
+    height: 60vw;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.movingCircle{
+    position: absolute;
+    border-radius: 50%; 
+    background-color: #5046aa;
+    
+}
+
+#movingCircle1{
+    width: 200px; 
+    height: 200px; 
+    left: -510px; 
+    animation-name: circleLeftToRight1;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle2{
+    width: 300px; 
+    height: 300px; 
+    right: 1450px; 
+    animation-name: circleRightToLeft1;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle3{
+    width: 200px; 
+    height: 200px; 
+    left: -500px; 
+    animation-name: circleRightToLeft1;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle4{
+    width: 250px; 
+    height: 250px; 
+    left: -700px; 
+    animation-name: circleLeftToRight1;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle5{
+    width: 150px; 
+    height: 150px; 
+    right: -700px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle6{
+    width: 300px; 
+    height: 300px; 
+    right: -300px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle7{
+    width: 240px; 
+    height: 240px; 
+    right: -300px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 110s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes circleLeftToRight1{
+    0%{
+        left: -400px;
+        top: 100px; 
+    }100%{
+        left: 110%;
+        top: 500px; 
+    }
+}
+
+@keyframes circleRightToLeft1{
+    0%{
+        right: -400px;
+        top: -100px; 
+    }100%{
+        right: 110%;
+        top: 500px; 
+    }
+}
+
+@keyframes circleRightToLeft2{
+    0%{
+        right: -400px;
+        bottom: -300px;
+    }100%{
+        right: 110%;
+        bottom: 400px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

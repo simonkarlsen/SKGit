@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewPort" content="width= device-width, initial scale= 1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+    <title>Piano | Resources</title>
+    <link rel="stylesheet" type="text/css" href="resources.css">
+    <script type= "text/javascript" src="/js/js.js"></script>
+
+</head>
+
+<body>
+    
+    <header id="headerWrapper">
+
+        <div id="homeLogo">
+            <a href="index.html"><img id="logo" src="images/logo_lillaskrift-kopi.png" alt="Logo"></a>
+        </div>
+
+        <!-- Activity header start -->
+        <div id="ideaHeader">
+
+        </div>
+        <!-- Activity header end -->
+
+        <!-- Users header start -->
+        <div id="usersHeader">
+
+            <div id="contrastColor">
+                <div id="contrastColorText"> High <br> Contrast</div>
+                <div id="contrastColorSwitch">
+                    <label class="switch">
+                        <input type="checkbox" id="isChecked">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="user-1">
+                <img class="profilePictures" src="images/Ingrid.jpg" alt="user-1">
+            </div>
+            <div class="userActivity" id="user-1-Activity">
+                <div id="userToDo-1" class="toDoBlock">1</div>
+                <div id="userAssistance-1" class="assistanceBlock">2</div>
+                <div id="userInProgress-1" class="inProgressBlock">3</div>
+                <div id="userFinished-1" class="finishedBlock">4</div>
+            </div>
+    
+            <div id="user-2">
+                <img class="profilePictures" src="images/Joakim.jpg" alt="user-2">
+            </div>
+            <div class="userActivity" id="user-2-Activity">
+                <div id="userToDo-2" class="toDoBlock">1</div>
+                <div id="userAssistance-2" class="assistanceBlock">2</div>
+                <div id="userInProgress-2" class="inProgressBlock">3</div>
+                <div id="userFinished-2" class="finishedBlock">4</div>
+            </div>
+    
+            <div id="user-3">
+                <img class="profilePictures" src="images/Mats.jpg" alt="user-3">
+            </div>
+            <div class="userActivity" id="user-3-Activity">
+                <div id="userToDo-3" class="toDoBlock">1</div>
+                <div id="userAssistance-3" class="assistanceBlock">2</div>
+                <div id="userInProgress-3" class="inProgressBlock">3</div>
+                <div id="userFinished-3" class="finishedBlock">4</div>
+            </div>
+    
+            <div id="user-4">
+                <img class="profilePictures" src="images/Simon.jpg" alt="user-4">
+            </div>
+            <div class="userActivity" id="user-4-Activity">
+                <div id="userToDo-4" class="toDoBlock">1</div>
+                <div id="userAssistance-4" class="assistanceBlock">2</div>
+                <div id="userInProgress-4" class="inProgressBlock">3</div>
+                <div id="userFinished-4" class="finishedBlock">4</div>
+            </div>
+    
+            <div id="user-5">
+                <img class="profilePictures" src="images/Solveig.jpg" alt="user-5">
+            </div>
+            <div class="userActivity" id="user-5-Activity">
+                <div id="userToDo-5" class="toDoBlock">1</div>
+                <div id="userAssistance-5" class="assistanceBlock">2</div>
+                <div id="userInProgress-5" class="inProgressBlock">3</div>
+                <div id="userFinished-5" class="finishedBlock">4</div>
+            </div>
+    
+            <div id="user-6">
+                <img class="profilePictures" src="images/Wetle.jpg" alt="user-6">
+            </div>
+            <div class="userActivity" id="user-6-Activity">
+                <div id="userToDo-6" class="toDoBlock">1</div>
+                <div id="userAssistance-6" class="assistanceBlock">2</div>
+                <div id="userInProgress-6" class="inProgressBlock">3</div>
+                <div id="userFinished-6" class="finishedBlock">4</div>
+            </div>
+
+        </div>
+        <!-- Users header end -->
+
+    </header>
+    <!-- 
+        Header wrapper end
+     -->
+    
+    
+    
+    <!------------------------------------------------->
+    
+    <!--Main container start-->
+    <div id= "mainContainer">
+        
+        <!-- Sidebar start-->
+        <div id="sideBar">
+            <a href="toDo.html"><img src="images/todo.png" id="toDoImg"></a>
+            <a href="mindMap.html"><img src="images/lamp.png" id="mindMapImg"></a>
+            <a href="resources.html"><img src="images/files.png" id="resourcesImg"></a>
+        </div>
+        
+        <!-- Box container start-->
+        <div id="boxContainer">
+            <!-- Project description box start-->
+            <div id= "box1" class="box">
+                <h2 id= "proInfoTitle">Project Description</h2>
+                <button id= "addDescription">Save</button>
+                <textarea id= "proInfoTextBox" placeholder="Write the project information here..."></textarea>
+            </div>
+                
+            <!-- Code samples box start-->
+            <div id= "box2" class="box">
+                <h2 id= "fileUploadTitle">Code samples</h2>
+        
+                <button type="button" id="customButton">Upload file</button>   
+                <span id="fileText1">No file chosen</span>
+            </div>
+                
+            <!-- Color templates box start-->  
+            <div id= "box3" class="box">
+                <h2 id= "colorTemp">Color Template</h2> 
+                <button type="button" id="customButton2">Upload file</button>   
+                <span id="fileText2">No file chosen</span>   
+            </div>
+                
+            <!-- Project log box start--> 
+            <div id= "box4" class="box">
+                <h2 id= "logTitle">Log</h2>
+                <button id= "addLog">Save</button>
+                <textarea id= "logTextBox" placeholder="Log your progress here..."></textarea>
+            </div>
+                
+            <!-- Comment section box start-->  
+            <div id= "box5" class="box">
+                <h2 id= "qAndA">Comments</h2> 
+                <input type= "text" id = "inputText1" placeholder="Add comment">
+                <button onclick="addComment()" id="commentButton">Send</button>
+                <ul id="commentSection"></ul>
+                </div>
+                    
+            <!-- Calender box start--> 
+            <div id= "box6" class="box">
+                <h2 id= "calendarHeadline">Calendar</h2> 
+                    <div id="calendar-container">
+                    <div id="calendar-header">
+                        <span id="calendar-month-year"></span>
+                    </div>
+                    <div id="calendar-dates">
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+                
+            </div>
+    
+    <!-- Background animation start-->   
+    <div id="circleContainer">
+            <div id="movingCircle1" class="movingCircle"></div>
+            <div id="movingCircle2" class="movingCircle"></div>
+            <div id="movingCircle3" class="movingCircle"></div>
+            <div id="movingCircle4" class="movingCircle"></div>
+            <div id="movingCircle5" class="movingCircle"></div>
+            <div id="movingCircle6" class="movingCircle"></div>
+            <div id="movingCircle7" class="movingCircle"></div>
+    </div>
+    
+    <script type="text/javascript" src="resources.js"></script>
+    <script type="text/javascript" src="highContrast.js"></script>
+                
+</body>
+
+</html>

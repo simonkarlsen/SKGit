@@ -1,0 +1,758 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #8781bd;
+    background-repeat: no-repeat;
+}
+
+
+
+#mainContainer{
+    position: relative;
+    display: flex;
+    width: 1325px;
+    height: 768px;
+    margin: auto;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#boxContainer{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 0;
+    display: inline-block;
+    width: 75%; 
+    height: 75%; 
+    left: 10%;
+    top: 20%; 
+    background-color: #F2F2E8;
+    border-radius: 20px; 
+    opacity: 0.8;
+    box-shadow: 10px 10px 5px #3a5532;
+    z-index: 100;
+    overflow: hidden;
+}
+
+/*sidebar styling*/
+#sideBar{
+    position: fixed;
+    left: 0;
+    top: 24%;
+    width: 5%;
+    height: 35%;
+    background-color: #d0d0d0;
+    border: 1px solid #000000; 
+    border-radius: 10px; 
+    z-index: 200;
+    opacity: 0.9;
+}
+
+#toDoImg{
+    position: absolute;
+    width: 80%;
+    left: 9%;
+    top: 2%;
+    border: 1px solid #000000;
+    border-radius: 10px; 
+}
+
+#mindMapImg{
+    position: absolute;
+    width: 80%;
+    left: 9%;
+    top: 38%;
+    border: 1px solid #000000;
+    border-radius: 10px; 
+}
+
+#resourcesImg{
+    position: absolute;
+    width: 80%;
+    left: 9%;
+    top: 74%;
+    border: 1px solid #000000;
+    border-radius: 10px; 
+}
+
+#toDoImg:hover, #mindMapImg:hover, #resourcesImg:hover{
+    background-color: #888;
+    cursor: pointer;
+}
+
+
+/*styling for the side header in the box container*/
+#mindHeader1{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: black;
+}
+
+/*first input field for the name of the idea*/
+#newField1{
+    position: absolute;
+    top: 100px; 
+    left: 20px; 
+    font-size: 15px; 
+    padding: 10px; 
+    border-radius: 20px;
+}
+
+/*second input field for the name of the development ideas*/
+#newField2{
+    position: absolute;
+    top: 180px; 
+    left: 20px; 
+    font-size: 15px; 
+    padding: 10px; 
+    border-radius: 20px;
+}
+
+/*third input field for the name of the design ideas*/
+#newField3{
+    position: absolute;
+    top: 260px; 
+    left: 20px; 
+    font-size: 15px; 
+    padding: 10px; 
+    border-radius: 20px;
+}
+
+/*buttons for the inputfields*/
+#addButton1{
+    position: absolute;
+    top: 100px; 
+    left: 160px;
+    height: 8%;
+    width: 22%;
+    border-radius: 20px; 
+    border: 1px solid #000000;
+    background-color: #dddfe0;
+}
+
+#addButton2{
+    position: absolute;
+    top: 180px; 
+    left: 160px;
+    height: 8%;
+    width: 22%;
+    border-radius: 20px; 
+    border: 1px solid #000000;
+    background-color: #dddfe0;
+}
+
+#addButton3{
+    position: absolute;
+    top: 260px; 
+    left: 160px;
+    height: 8%;
+    width: 22%;
+    border-radius: 20px; 
+    border: 1px solid #000000;
+    background-color: #dddfe0;
+}
+
+#addButton1:hover, #addButton2:hover, #addButton3:hover{
+    background-color: #888;
+    cursor: pointer;
+}
+
+#mindHeaderText{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    text-align: center;
+    color: #f0f8ff;
+}
+
+#headerLine{
+    position: absolute;
+    width: 100%; 
+    height: 0.5%; 
+    top: 11%; 
+    background-color: #ffffff;
+    
+}
+
+/*output text and fields that displays the input*/
+#showIdeaName{
+    position: absolute;
+    width: 500px; 
+    height: 100px;
+    top: -60px;
+    text-align: center;
+    font-size: 40px; 
+    overflow: hidden;
+}
+
+#outputIdeaName{
+    position: absolute;
+    font-family: 'Anton', sans-serif;
+    top: 10px;
+    width: 500px; 
+    height: 100px;
+    left: 370px; 
+    border: 1px solid #000000; 
+    box-shadow: 10px 10px #8781bd;
+    border-radius: 20px; 
+}
+
+#showIdea, #showIdea1{
+    position: absolute;
+    margin: 2rem;
+    font-size: 30px;
+    
+}
+
+#outputIdea{
+    left: 30%;
+}
+
+#ideaText1, #ideaText2{
+    position: absolute;
+    top: -10px;
+    text-align: center;
+    width: 300px;
+    text-decoration: underline;
+}
+
+#outputIdea1{
+    left: 65%;
+}
+
+.outputBoxes{
+    position: absolute;
+    width: 30%;
+    height: 63%;
+    top: 30%; 
+    border: 1px solid #000000;  
+    overflow: hidden;
+    box-shadow: 10px 10px #8781bd;
+    border-radius: 20px; 
+}
+
+.inputInfoText{
+    position: absolute;
+    color: #ffffff;
+    left: 40px; 
+}
+
+#input1InfoText{
+    top: 60px;
+}
+
+#input2InfoText{
+    top: 140px;
+}
+
+#input3InfoText{
+    top: 220px;
+}
+
+/*Styling the circles in the background*/
+#circleContainer{
+    position: absolute;
+    top: 0;
+    width:100vw;
+    height: 60vw;
+    overflow: hidden;
+}
+
+.movingCircle{
+    position: absolute;
+    border-radius: 50%; 
+    background-color: #5046aa;
+    
+}
+
+#movingCircle1{
+    width: 200px; 
+    height: 200px; 
+    left: -510px; 
+    animation-name: circleLeftToRight1;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle2{
+    width: 300px; 
+    height: 300px; 
+    right: 1450px; 
+    animation-name: circleRightToLeft1;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle3{
+    width: 200px; 
+    height: 200px; 
+    left: -500px; 
+    animation-name: circleRightToLeft1;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle4{
+    width: 250px; 
+    height: 250px; 
+    left: -700px; 
+    animation-name: circleLeftToRight1;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle5{
+    width: 150px; 
+    height: 150px; 
+    right: -700px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle6{
+    width: 300px; 
+    height: 300px; 
+    right: -300px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#movingCircle7{
+    width: 240px; 
+    height: 240px; 
+    right: -300px; 
+    animation-name: circleRightToLeft2;
+    animation-duration: 110s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes circleLeftToRight1{
+    0%{
+        left: -400px;
+        top: 100px; 
+    }100%{
+        left: 110%;
+        top: 500px; 
+    }
+}
+
+@keyframes circleRightToLeft1{
+    0%{
+        right: -400px;
+        top: -100px; 
+    }100%{
+        right: 110%;
+        top: 500px; 
+    }
+}
+
+@keyframes circleRightToLeft2{
+    0%{
+        right: -400px;
+        bottom: -300px;
+    }100%{
+        right: 110%;
+        bottom: 400px; 
+    }
+}
+
+#removeDevInputButton{
+    position: absolute;
+    left: 40%;
+    bottom: 10px;
+}
+
+#removeDevInputButton2{
+    position: absolute;
+    left: 76%;
+    bottom: 10px;
+}
+
+#removeDevInputButton:hover, #removeDevInputButton2:hover{
+    background-color: #888;
+    cursor: pointer;
+}
+
+
+/***************************************/
+
+@-ms-viewport{
+    width: device-width;
+}
+
+/*
+Background colors visual end
+*/
+
+/* 
+Header wrapper start
+*/
+#headerWrapper {
+    position: absolute;
+    z-index: 200;
+    opacity: 0.9;
+    max-width: 5000px;
+    min-width: 1260px;
+    margin: 0;
+    display: grid;
+    padding: 1%;
+    border-radius: 30px;
+    grid-template-columns: 6% 37% 57%;
+    grid-template-rows: 90px;
+    grid-template-areas: 
+        "homeLogo activityHeader usersHeader";
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    color: black;
+    background-color: #d8d8d8;
+    margin-top: 1%;
+    border: 1px solid #000000;
+}
+
+#homeLogo {
+    grid-area: homeLogo;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+}
+
+/* Activity header start */
+#ideaHeader{
+    grid-area: activityHeader;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "idea-1 idea-4"
+        "idea-2 idea-5"
+        "idea-3 idea-6";
+    font-size: 23px;
+}
+
+#idea-1 {
+    grid-area: idea-1;
+}
+
+#idea-2 {
+    grid-area: idea-2;
+}
+
+#idea-3 {
+    grid-area: idea-3;
+}
+
+#idea-4 {
+    grid-area: idea-4;
+}
+
+#idea-5 {
+    grid-area: idea-5;
+}
+
+#idea-6 {
+    grid-area: idea-6;
+}
+
+.activityNumber {
+}
+
+/* Activity header end */
+
+/* Users header start */
+#usersHeader{
+    grid-area: usersHeader;
+    font-size: 20px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 10% repeat(6, 3fr 1fr);
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: 
+        "addUser user-1 userToDo-1 user-2 userToDo-2 user-3 userToDo-3 user-4 userToDo-4 user-5 userToDo-5 user-6 userToDo-6"
+
+        "addUser user-1 userAssistance-1 user-2 userAssistance-2 user-3 userAssistance-3 user-4 userAssistance-4 user-5 userAssistance-5 user-6 userAssistance-6"
+
+        "addUser user-1 userInProgress-1 user-2 userInProgress-2 user-3 userInProgress-3 user-4 userInProgress-4 user-5 userInProgress-5 user-6 userInProgress-6"
+
+        "addUser user-1 userFinished-1 user-2 userFinished-2 user-3 userFinished-3 user-4 userFinished-4 user-5 userFinished-5 user-6 userFinished-6";
+}
+
+#contrastColorText {
+    grid-area: contrastColorText;
+}
+
+#contrastColorSwitch {
+    grid-area: contrastColorSwitch;
+    padding-top: 10%;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+      top: 2%;
+      left: 2%;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #ffc40d;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #0ca9e1;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.profilePictures {
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    margin-top: 12.5%;
+    margin-left: 17%;
+}
+
+.toDoBlock {
+    height: 100%;
+    background-color: #b5d9e8;
+}
+
+.assistanceBlock {
+    height: 100%;
+    background-color: #ffa49a;
+}
+
+.inProgressBlock {
+    height: 100%;
+    background-color: #f8ffb9;
+}
+
+.finishedBlock {
+    height: 100%;
+    background-color: #aeecb6;
+}
+
+/* User 1 start */
+#user-1 {
+    grid-area: user-1;
+}
+
+#userToDo-1 {
+    grid-area: userToDo-1;
+}
+
+#userAssistance-1 {
+    grid-area: userAssistance-1;
+}
+
+#userInProgress-1 {
+    grid-area: userInProgress-1;
+}
+
+#userFinished-1 {
+    grid-area: userFinished-1;
+}
+/* User 1 end */
+
+/* User 2 start */
+#user-2 {
+    grid-area: user-2;
+}
+
+#userToDo-2 {
+    grid-area: userToDo-2;
+}
+
+#userAssistance-2 {
+    grid-area: userAssistance-2;
+}
+
+#userInProgress-2 {
+    grid-area: userInProgress-2;
+}
+
+#userFinished-2 {
+    grid-area: userFinished-2;
+}
+/* User 2 end */
+
+/* User 3 start */
+#user-3 {
+    grid-area: user-3;
+}
+
+#userToDo-3 {
+    grid-area: userToDo-3;
+}
+
+#userAssistance-3 {
+    grid-area: userAssistance-3;
+}
+
+#userInProgress-3 {
+    grid-area: userInProgress-3;
+}
+
+#userFinished-3 {
+    grid-area: userFinished-3;
+}
+/* User 3 end */
+
+/* User 4 start */
+#user-4 {
+    grid-area: user-4;
+}
+
+#userToDo-4 {
+    grid-area: userToDo-4;
+}
+
+#userAssistance-4 {
+    grid-area: userAssistance-4;
+}
+
+#userInProgress-4 {
+    grid-area: userInProgress-4;
+}
+
+#userFinished-4 {
+    grid-area: userFinished-4;
+}
+/* User 4 end */
+
+/* User 5 start */
+#user-5 {
+    grid-area: user-5;
+}
+
+#userToDo-5 {
+    grid-area: userToDo-5;
+}
+
+#userAssistance-5 {
+    grid-area: userAssistance-5;
+}
+
+#userInProgress-5 {
+    grid-area: userInProgress-5;
+}
+
+#userFinished-5 {
+    grid-area: userFinished-5;
+}
+/* User 5 end */
+
+/* User 6 start */
+#user-6  {
+    grid-area: user-6;
+}
+
+#userToDo-6 {
+    grid-area: userToDo-6;
+}
+
+#userAssistance-6 {
+    grid-area: userAssistance-6;
+}
+
+#userInProgress-6 {
+    grid-area: userInProgress-6;
+}
+
+#userFinished-6 {
+    grid-area: userFinished-6;
+}
+/* User 6 end */
+
+/* Users header end */
+/* 
+Header wrapper end
+*/
+
+#addUserImg{
+    position: absolute;
+    width: 3%;
+    left: 44.5%;
+    top: 50%;
+}
+
+.profilePictures:hover {
+    opacity: 0.5;
+}
+
+#addUser:hover{
+    background-color: #888;
+    border: 1px solid #000000;
+}
+
+#homeLogo:hover{
+    background-color: #888;
+    border: 1px solid #000000;
+}
+
+#addUserImg{
+    position: absolute;
+    width: 3%;
+    left: 44.5%;
+    top: 53%;
+}
